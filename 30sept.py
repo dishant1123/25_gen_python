@@ -155,7 +155,7 @@ print(10 not in l1)
 """
 
 # match  : 
-a=int(input("enter  the  number 1:"))
+"""a=int(input("enter  the  number 1:"))
 b=int(input("enter  the  number 2:"))
 
 print("1.addition")
@@ -179,10 +179,18 @@ match choice :
         print(a%b)
     case 6 :
         print(a//b)
-
+"""
 # menu  hotel  :
 """
 1. panjabi  : qty  , price ==> total  bill 
 2. south indian 
 3. maxican 
 """
+# complex number  : i ,j complex  ex : 23j  , 23 +8j ==> 23 real part , 8 imaginary part
+
+
+a=23+8j 
+b=40 +7j
+print(a)
+print(type(a))  # type casting
+print(a+b)
