@@ -138,6 +138,15 @@ input  : W
 output  :w  
 
 """
+# ord ==> print  ascci value  of the character
+# diff  : 32  ==> A ==>ascci  value  ==>65  a ascci value  ==>97   d 
 
-# What will be the output of this program?
-print(int("6" == 6.0) * 3 + 4 % 5)  # 4 
+"""
+ch =input("enter the character : ")
+if ch >='A' and ch <='Z': 
+    ch= ord(ch) +32 
+    print(chr(ch))  
+else :
+    ch= ord(ch) -32
+    print(chr(ch))
+"""
