@@ -32,4 +32,4 @@ for v in range(1,101,2):
     print(v,end=" ")
 
 """
-#-90 to  45 print  
+#-90 to  45 print    45 to  -90 print 
