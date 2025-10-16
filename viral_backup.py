@@ -33,3 +33,26 @@ for v in range(1,101,2):
 
 """
 #-90 to  45 print    45 to  -90 print 
+
+"""n=int(input("enter the num : "))
+for i in range(1,n+1):
+    print(i,end=" ")
+"""
+
+"""start = int(input("enter the start : "))
+stop= int(input("enter the stop : "))
+
+for i in range(start, stop+1):
+    print(i,end=" ")
+"""
+
+# prime  : 
+n=int(input("enter the num : "))
+count =0 
+
+for i in range(1,n+1):
+    if n % i==0 :
+        count +=1 
+if count ==2 :
+    print(n,"is a prime number")
+        
