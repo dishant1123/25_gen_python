@@ -135,7 +135,7 @@ for i in range(5):
     print()
 """
 """
-8.           9.          10.         11.         12.         13.
+8.           9.          10.         11.         12.         
  
 * * * * *   * * * * *        *        *          * 
   * * * *    * * * *       * *       * *        * * 
@@ -183,3 +183,35 @@ for i in range(1,6):
         print("*",end=" ")
     print()
 """
+
+"""
+13.          14.          15.         16.         17.         18.
+*            * * * * *   * * * * *     *           *        * * * * *
+* *          *     *      *     *     * *         * *       *       *
+*   *        *   *         *   *     *   *       *   *      *       *
+*     *      * *            * *     *      *    *     *     *       *
+* * * * *    *               *     * * * *  *  *       *    * * * * *
+                                                *     *
+                                                 *   *
+                                                  * *
+                                                   *
+"""
+
+#18 :
+"""for i in range(1,6):
+    for j in range(1,6):
+        if i==1 or i==5 or j==1 or j==5 :
+            print("*",end=" ")
+        else :
+            print(" ",end=" ")
+    print()
+"""
+#13: 
+
+for i in range(1,6):
+    for j in range(1,i+1):
+        if i==1 or i==5 or j==1 or i==j:
+            print("*",end=" ")
+        else :
+            print(" ",end=" ")
+    print()
