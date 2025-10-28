@@ -92,3 +92,31 @@ each mul = 1*2*3 =6
 
 sum ==mul  ==> twin 
 """
+
+"""n=int(input("enter the  number  : "))  #123 
+sum =0 
+mul =1 
+digits= len(str(n))  # 3 
+
+for i in range(digits):   # 2-3 
+    r = n % 10    # r = 1 %10 =1 
+    sum =sum +r   # sum =6
+    mul = mul *r   # mul =6
+    n = n //10     # n =1 //10 =0 
+    
+if sum ==mul :
+    print("twin")
+"""
+
+# rev : 
+
+n=int(input("enter the number : "))
+rev =0 
+digit = len(str(n))
+
+for i in range(digit): 
+    r = n %10 
+    rev = rev *10 +r 
+    n = n//10 
+    
+print(rev)
