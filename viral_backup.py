@@ -316,3 +316,14 @@ while True :
             
 # task :1 put a exit  condition  
 #task :2  8 enter the  new number  :  
+
+"""
+1. fruits   
+    1. apples   ==>5 qty  price ==>100 
+    2. oranges
+2. vegetables
+    1.potatoes ==> 3 ==> price ==>50
+    2.tomatoes
+total fruits :
+total vegetables : 
+"""
