@@ -277,30 +277,42 @@ while True :
     if i==100:
         break
 """
-a=int(input("enter  the  number 1:"))
-b=int(input("enter  the  number 2:"))
+while True :
+    a=int(input("enter  the  number 1:"))
+    b=int(input("enter  the  number 2:"))
+    while True :
+        print("1.addition")
+        print("2.subtraction")
+        print("3.multiplication")
+        print("4.division")
+        print("5.modulo")
+        print("6.floor  division")
+        choice=int(input("enter  the  operation  :"))
 
-print("1.addition")
-print("2.subtraction")
-print("3.multiplication")
-print("4.division")
-print("5.modulo")
-print("6.floor  division")
-choice=int(input("enter  the  operation  :"))
-
-match choice :
-    case 1 :
-        print(a+b)
-    case 2 :
-        print(a-b)
-    case 3 :
-        print(a*b)
-    case 4 :
-        print(a/b)
-    case 5 :
-        print(a%b)
-    case 6 :
-        print(a//b)
+        match choice :
+            case 1 :
+                print(a+b)
+            case 2 :
+                print(a-b)
+            case 3 :
+                print(a*b)
+            case 4 :
+                print(a/b)
+            case 5 :
+                print(a%b)
+            case 6 :
+                print(a//b)
+            case 7:
+                break
+            case 8 :
+                exit()
+                break
+                
+    sure = input("do  you  want  to  continue  ?  y/n  :")
+    if sure =="n":
+        break
         
+            
+            
 # task :1 put a exit  condition  
 #task :2  8 enter the  new number  :  
