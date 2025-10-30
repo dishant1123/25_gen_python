@@ -208,6 +208,7 @@ for i in range(1,6):
 """
 #13: 
 
+"""
 for i in range(1,6):
     for j in range(1,i+1):
         if i==1 or i==5 or j==1 or i==j:
@@ -215,3 +216,91 @@ for i in range(1,6):
         else :
             print(" ",end=" ")
     print()
+"""
+
+# while  :    # for exit 
+"""
+syntax : 
+
+i= intial  value 
+
+while  con :
+    print(i)
+    i+=1  /dec 
+"""
+
+#1-100 : 
+
+"""i=1 
+while  i<=100 : 
+    print(i,end=" ")
+    i+=1 
+"""
+
+# break
+"""for i in range(1,10):
+    if i==5 :
+        break
+    print(i,end=" ")
+"""
+#continue :    
+"""for i in range(1,10):
+    if i==5 :
+        continue
+    print(i,end=" ")
+"""
+#pass :
+"""
+for i in range(1,10):
+    if i==5 :
+        pass
+    print(i,end=" ")
+"""
+
+# while true  :   ==> for exit 
+"""
+syntax :
+
+i=intial  value
+
+while True :
+    print(i)
+    if con :
+        break
+"""
+
+"""
+i=1 
+while True :
+    print(i,end=" ")
+    i+=1
+    if i==100:
+        break
+"""
+a=int(input("enter  the  number 1:"))
+b=int(input("enter  the  number 2:"))
+
+print("1.addition")
+print("2.subtraction")
+print("3.multiplication")
+print("4.division")
+print("5.modulo")
+print("6.floor  division")
+choice=int(input("enter  the  operation  :"))
+
+match choice :
+    case 1 :
+        print(a+b)
+    case 2 :
+        print(a-b)
+    case 3 :
+        print(a*b)
+    case 4 :
+        print(a/b)
+    case 5 :
+        print(a%b)
+    case 6 :
+        print(a//b)
+        
+# task :1 put a exit  condition  
+#task :2  8 enter the  new number  :  
