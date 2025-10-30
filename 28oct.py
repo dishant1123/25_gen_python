@@ -110,7 +110,7 @@ if sum ==mul :
 
 # rev : 
 
-n=int(input("enter the number : "))
+"""n=int(input("enter the number : "))
 rev =0 
 digit = len(str(n))
 
@@ -120,3 +120,4 @@ for i in range(digit):
     n = n//10 
     
 print(rev)
+"""
