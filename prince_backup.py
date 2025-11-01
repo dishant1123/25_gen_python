@@ -116,7 +116,7 @@ output :1020
 
 # match  : 
 
-a=int(input("enter the  number 1 : "))
+"""a=int(input("enter the  number 1 : "))
 b=int(input("enter the  number 1 : "))
 
 print("1.addition")
@@ -140,3 +140,38 @@ match  choice :
         print(a%b)
     case 6:
         print(a//b)
+"""
+
+# factorial  : user ==> 5 ==>120 
+
+
+# pattern  : 
+
+""" 
+1.          2.            3.        4.           5.           6.
+* * * * *   *          * * * * *    1            5 4 3 2 1    1 2 3 4 5
+* * * * *   * *        * * * *      1 2          5 4 3 2      2 3 4 5
+* * * * *   * * *      * * *        1 2 3        5 4 3        3 4 5
+* * * * *   * * * *    * *          1 2 3 4      5 4          4 5
+* * * * *   * * * * *  *            1 2 3 4 5    5            5
+"""
+
+# 1: 
+"""
+for i in range(1,6):
+    for j in range(1,6):
+        print("*",end=" ")
+    print()        
+"""
+#2 : 
+"""for i in range(1,6):
+    for j in range(1,i+1):
+        print("*",end=" ")
+    print()        
+"""
+
+# 3: 
+for i in range(1,6):
+    for j in range(6,i,-1):
+        print("*",end=" ")
+    print()        
