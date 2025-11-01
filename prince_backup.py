@@ -171,7 +171,25 @@ for i in range(1,6):
 """
 
 # 3: 
+"""
 for i in range(1,6):
     for j in range(6,i,-1):
         print("*",end=" ")
     print()        
+"""
+
+"""
+5:          6 : 
+a           e d c b a 
+a b         e d c b 
+a b c       e d c
+a b c d     e d
+a b c d e   e
+
+"""
+# ord : ==> character  ascci value  print  
+ch='a'
+for i in range(1,6):   # 1 
+    for j in range(1,i+1):   # 1 , 2 
+        print(chr(ord(ch)+j-1),end=" ")    # 
+    print()
