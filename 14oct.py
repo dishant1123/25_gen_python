@@ -92,6 +92,7 @@ sum = 1+2+4+7+14 =28 perfect
 
 """
 
+"""
 start=int(input("enter the number  start : "))
 end = int(input("enter the number end  : "))
 
@@ -102,3 +103,4 @@ for i in range(start ,end+1):
             count +=1 
     if count ==2 :
         print(i,end=" ")
+"""
