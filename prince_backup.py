@@ -188,8 +188,118 @@ a b c d e   e
 
 """
 # ord : ==> character  ascci value  print  
-ch='a'
+"""ch='a'
 for i in range(1,6):   # 1 
     for j in range(1,i+1):   # 1 , 2 
         print(chr(ord(ch)+j-1),end=" ")    # 
     print()
+"""
+
+
+#1. string  2 list  3 tuple 4 dict  5 set 
+"""
+#list : mutable  sequence element  ==> you can changes in list. 
+
+"""
+l1=[1,2,3,4,56,7,8,9,"jay",9j,90.89]
+print(l1)
+print(type(l1))
+ 
+"""
+# list element access though  index : 
+"""
+l1=[1,2,3,4,56,7,8,9,"jay",9j,90.89]
+
+print(l1[0])
+l1[2] ="viral"
+print(l1)
+"""
+# slicing  : 
+
+"""
+l1=[100,2,3,4,56,7,8,9,90,91,90]
+# pos index : l to  r  ==> 0 
+# neg index : r to l  ==>-1 
+
+print(l1[4])
+print(l1[2:4])
+print(l1[2:4])
+print(l1[ :8])
+print(l1[1 : ])
+print(l1[-1])
+print(l1[-5 : -1])
+print(l1[5 : -1])
+print(l1[-5 : 1])
+#       -5 -4-3-2-1 0 1 2 3 4 5
+
+print(l1[2: 8 :2])
+print(l1[1: 8 :3])
+print(l1[ :   :2])
+print(l1[ :   :-2])
+print(l1[ :   :-1])
+
+"""
+
+# built in function  : len min max sorted sum 
+"""
+l1=[100,2,3,4,56,7,8,9,90,91,90]
+print(len(l1))
+print(min(l1))
+print(max(l1))
+print(sorted(l1))   # asc to desc
+print(sorted(l1,reverse=True))
+print(sum(l1))
+"""
+
+# method  : 
+l1=[100,2,3,4,56,7,8,9,90,91,90]
+
+"""
+l1.append(2000)  # add element in last 
+print(l1)
+
+l2= l1.copy()
+print("l2=",l2)
+
+"""
+"""
+l1.clear()
+print(l1)
+"""
+
+"""
+l2=["apple","banana","cherry"]
+
+l1.extend(l2)
+print(l1)
+"""
+
+# index : 
+"""
+l1=[100,2,3,4,56,7,8,9,90,91,90,56]
+
+print(l1.index(56))
+print(l1.index(56,5,20))
+
+"""
+
+l1=[100,2,3,4,56,7,8,9,90,91,90,56]
+
+# remove  , pop : 
+# l1.pop(4)  # arg  ==> index 
+# print(l1)
+
+"""
+l1.remove(8)
+print(l1)
+"""
+# l1.sort()
+# print(l1)
+
+"""
+l1.reverse()
+print(l1)
+"""
+
+print(l1.count(56))
+"""

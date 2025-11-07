@@ -222,7 +222,7 @@ while True :
         break
 """
 
-a=int(input("enter  the  number 1:"))
+"""a=int(input("enter  the  number 1:"))
 b=int(input("enter  the  number 2:"))
 
 print("1.addition")
@@ -246,9 +246,11 @@ match choice :
         print(a%b)
     case 6 :
         print(a//b)
-
+"""
 # task :1 
 """
 1.exit  condition   ==> 7 
 2.user  ==> 8  ==> enter the new number  : 
 """
+
+
