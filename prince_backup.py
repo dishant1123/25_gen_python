@@ -359,7 +359,7 @@ print(l1[ : : -1])
 
 # method  : 
 
-l1=[1,2,3,4,56,7,8,9,56,9,90]
+# l1=[1,2,3,4,56,7,8,9,56,9,90]
 
 # l1.append(2000) 
 # print(l1)
@@ -375,7 +375,7 @@ l1=[1,2,3,4,56,7,8,9,56,9,90]
 
 # print(l1.count(56))
 
-l1=[1,2,3,4,56,7,8,9,56,9,90]
+# l1=[1,2,3,4,56,7,8,9,56,9,90]
 
 # print(l1.index(56))
 # print(l1.index(56,5,20))
@@ -406,7 +406,7 @@ print(l1)
 
 # task :1 
 
-n=int(input("enter the  number :"))
+"""n=int(input("enter the  number :"))
 l2=[]
 for i in range(1,n+1):
     element =int(input("enter the  number :"))
@@ -421,3 +421,41 @@ for i in l2 :
         odd=odd+i
 print(even)
 print(odd)
+"""
+names1 = ['Amir', 'Bear', 'Charlton', 'Daman']
+names2 = names1
+names3 = names1[:]
+names2[0] = 'Alice'
+names3[1] = 'Bob'
+print(names1)
+print(names2)
+print(names3)
+# names1 = ["alice", "bob", "charlton", "daman"]
+# names2 = ["alice", "bear", "charlton", "daman"]
+# names3 = ["alice", "bob", "charlton", "daman"]
+# for ls in (names1, names2, names3):
+#     if ls[0] == 'Alice':
+#         sum += 1
+#     if ls[1] == 'Bob':
+#         sum += 10
+# print(sum)
+
+
+"""l2=[1,1,2,3,4,5,6,7,8,1,1]
+
+print(l2.count(1))
+print(l2.index(1))
+print(l2.index(1,3,20))
+"""
+
+"""x = [1, 2, 3]
+# y = "vyom"
+# x.extend(y)
+print(x)
+
+x.remove(3)
+print(x)
+
+x.sort(reverse=True)
+print(x)
+"""
