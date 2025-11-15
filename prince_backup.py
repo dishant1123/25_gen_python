@@ -422,14 +422,14 @@ for i in l2 :
 print(even)
 print(odd)
 """
-names1 = ['Amir', 'Bear', 'Charlton', 'Daman']
-names2 = names1
-names3 = names1[:]
-names2[0] = 'Alice'
-names3[1] = 'Bob'
-print(names1)
-print(names2)
-print(names3)
+# names1 = ['Amir', 'Bear', 'Charlton', 'Daman']
+# names2 = names1
+# names3 = names1[:]
+# names2[0] = 'Alice'
+# names3[1] = 'Bob'
+# print(names1)
+# print(names2)
+# print(names3)
 # names1 = ["alice", "bob", "charlton", "daman"]
 # names2 = ["alice", "bear", "charlton", "daman"]
 # names3 = ["alice", "bob", "charlton", "daman"]
@@ -459,3 +459,29 @@ print(x)
 x.sort(reverse=True)
 print(x)
 """
+# adv list  : 
+
+l1=[[1,2,3],[4,5,6],[7,8,9]]
+     #0       1       2
+"""print(l1)
+for i in l1 :
+    print(i)
+"""
+"""
+1 2 3 
+4 5 6
+7 8 9
+"""
+"""print(l1[0])
+print(l1[2])
+
+print(l1[0][1])
+print(l1[0 :2][0:1])
+print(l1[ : :-1])
+"""
+
+l2=[[1,10],[4,6],[0,9]]
+
+# sort the array element for 2 postion element : 
+
+# output  : [[4,6],[0,9],[1,10]]
