@@ -481,7 +481,18 @@ print(l1[ : :-1])
 """
 
 l2=[[1,10],[4,6],[0,9]]
+"""
+1 ,10 
+4, 6
+0, 9
+"""
 
 # sort the array element for 2 postion element : 
-
 # output  : [[4,6],[0,9],[1,10]]
+
+for i in range (len(l2)) :  # 0 -3
+    for j in  range(len(l2)-1):  # 0 -2  
+        if l2[j][1] > l2[j+1][1]:   # if l2[0][1] > l2[1][1]  = 10 >6> 
+            l2[j],l2[j+1] =l2[j+1],l2[j] #   l2[0],l2[1]        =l2[1],l2[0]
+print(l2)
+    
