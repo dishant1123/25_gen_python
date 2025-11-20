@@ -81,3 +81,16 @@ Write a Python program that accepts a list of integers and calculates the length
 	False
 
 """
+l1= [19, 19,15, 5, 3, 5, 5, 2] 
+count =0 
+count1=0 
+for i in l1:
+    if i==19 :
+        count +=1
+    if i==5 :
+        count1 +=1
+ 
+if count==2 and count1==3 :
+    print("True")
+else :
+    print("False")
