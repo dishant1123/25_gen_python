@@ -83,7 +83,7 @@ while True :
 
 # match : 
 
-a=int(input("enter the  number  1:"))
+"""a=int(input("enter the  number  1:"))
 b=int(input("enter the  number 2 :" ))
 print("1.addition")
 print("2.subtraction")
@@ -112,3 +112,225 @@ match  choice :
 # task 1 : exit con 
 # task  :2 7 press ==> enter the new number  
 
+"""
+
+# list  : mutable sequnece of element .    ==> you can change the list
+
+"""
+l1=[1,2,3,4,5,"krishiv",True,8j,67.89]
+
+print(l1)
+print(type(l1))
+"""
+# list element access though index : 
+
+"""
+l1=[1,2,3,4,5,"krishiv",True,8j,67.89]
+
+print(l1[4])
+
+l1[2]= "modi"  # update the  list  though index
+print(l1)
+"""
+
+# built in function  :  len min max sorted sum reversed
+
+"""
+l1=[10,2,3,4,5,67.89,90]
+
+print(len(l1))
+print(min(l1))
+print(max(l1))
+print(sorted(l1))  # asc to desc 
+print(sum(l1))
+print(sorted(l1,reverse=True))  #  desc to asc 
+
+"""
+# method  : 
+
+l1=[10,2,3,4,5,67.89,90,10]
+
+# l1.append(100)
+# print(l1)
+
+# l1.clear()
+# print(l1)
+
+# l2=l1.copy()
+# print(l2)
+
+# l1.insert(3,450)
+# print(l1)
+
+# print(l1.count(10))
+
+# print(l1.index(10))
+# print(l1.index(10,1,20))
+
+# pop , remove : 
+
+# l1.pop()  # if not give any arg then remove  the  last element. 
+# print(l1)
+
+# l1.pop(3)# arg : index 
+# print(l1)
+
+# l1.remove(10)
+# print(l1)
+
+# l1.sort()
+# print(l1)
+
+# l1.sort(reverse=True)
+# print(l1)
+
+# l1.reverse()
+# print(l1)
+
+# l2=["apple","mango","banana","orange","kiwi"]
+# l1.extend(l2)
+# print(l1)
+
+
+# slicing  :
+
+"""l1=[10,2,3,4,5,67.89,90,10]
+
+print(l1[4])
+print(l1[2:5])
+print(l1[ :7])
+print(l1[1 :])
+print(l1[-2])
+print(l1[-2 :4])
+print(l1[-2 :-4 :-2])
+print(l1[-4 :-2])
+print(l1[ : : 2])
+print(l1[ : : -1])
+"""
+"""
+ask : 3 take list from user append all element in list and remove duplicate element in the list.
+         input : [1,2,3,4,4,5,5,6,7,8,9,9,10]
+         output : [1,2,3,4,5,6,7,8,9,10]
+"""
+
+"""n=int(input("enter the  number  of element  in the list : "))
+l1=[]
+for i in range(n):
+    ele=int(input("enter the element : "))
+    l1.append(ele)
+print(l1)  # [1 2 2 3 3 4 5]
+l2=[]
+for i in l1 :
+    if i not in l2 : 
+        l2.append(i)
+print(l2)
+"""
+
+# task :2 peli : 
+
+"""n=int(input("enter the  number  of element  in the list : "))
+l1=[]
+for i in range(n):
+    ele=int(input("enter the element : "))
+    l1.append(ele)
+print(l1)  # [121 123 222 453 131]
+l2=[]"""
+"""for i in l1 : 
+    rev =0 
+    temp =i 
+    while temp >0 :
+        r= temp%10
+        rev = rev *10 +r 
+        temp = temp //10  
+    if rev ==i :
+        l2 .append(i)
+print(l2)   
+
+"""
+"""l2=[]
+for i in l1:
+    if str(i) == str(i)[ : : -1]:
+        l2.append(i)
+print(l2)
+
+"""
+
+# tuple  : immutable squence  of element .
+  
+"""t1=(1,2,3,4,5,"krishiv",True,8j,67.89)
+print(t1)
+print(type(t1))
+
+t2= 1,2,3,4,5,6,7,8
+print(t2)
+print(type(t2))
+
+t3=("")
+print(t3)
+print(type(t3))
+
+t4=""
+print(t4)
+print(type(t4))
+"""
+
+# built in function  :  len  min max sorted sum 
+
+"""
+t1=(12,2,3,4,5,67.89)
+
+print(len(t1))
+print(min(t1))
+print(max(t1))
+print(sorted(t1))  # asc to desc 
+print(sum(t1))
+print(sorted(t1,reverse=True))  #  desc to asc
+"""
+
+# slicing  : 
+
+# t1=(12,2,3,4,5,67.89)
+
+"""t1[4] ="krishiv"  # not possible  bcz  tuple is  immutable 
+print(t1)
+"""
+"""print(t1[4])
+print(t1[ :5])
+print(t1[ 1:])
+print(t1[-1])
+print(t1[ : : -1])
+"""
+
+# method  : 
+
+"""
+t1=(12,2,3,4,5,67.89,12,45,78)
+
+print(t1.count(12))
+print(t1.index(12))
+print(t1.index(12,1,20))
+
+"""
+
+# mcq : 
+"""
+t1=(12,13,14,0,[1,2,3],89,90)
+#   0   1  2 3   4     5   6 
+
+t1[4].append("krishiv")
+print(t1)
+
+options : 
+
+a. error 
+b. (12,13,14,0,[1,2,3,"krishiv"],89,90)
+c. (12,13,14,0,[1,2,3],"krishiv",89,90)
+d. none
+
+"""
+
+# task :1 add one element in tuple  last position.
+"""
+input  : t1=(12,2,3,4,5,67.89,12,45,78)
+output  : t1=(12,2,3,4,5,67.89,12,45,78,"krishiv")
+"""
