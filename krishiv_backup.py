@@ -334,3 +334,91 @@ d. none
 input  : t1=(12,2,3,4,5,67.89,12,45,78)
 output  : t1=(12,2,3,4,5,67.89,12,45,78,"krishiv")
 """
+
+"""t1=(12,2,3,4,5,67.89,12,45,78)
+print(list(t1))
+"""
+# task  :2 changes  in  last elemet in tuple. 
+
+"""
+input : t1= [(1,2,3),(4,5,6),(7,8,9)]
+outut  : t1= [(1,2,100),(4,5,100),(7,8,100)]
+"""
+
+# dict : mutable   ==> key value pair 
+
+"""
+d1={"phy":90 ,"che" :78}
+print(d1)
+print(type(d1)) 
+
+d2= {90 :89 ,"com":100}
+print(d2)
+print(type(d2))
+
+"""
+
+# update  : 
+"""
+d1={"phy":90 ,"che" :78}
+d1["com"] =100
+print(d1)
+"""
+# built in function  : len  min max sorted sum 
+
+"""
+d1={"phy":90 ,"che" :78}
+print(len(d1))
+print(min(d1))
+print(max(d1))
+print(sorted(d1))  # asc to desc 
+print(sorted(d1,reverse=True))  # asc to desc 
+"""
+
+# slicing  :
+"""
+d1={"phy":90 ,"che" :78}
+print(d1[0]) # slicing not poss in dict 
+"""
+
+# method : 
+d1={"phy":90 ,"che" :78}
+
+"""d1.clear()
+print(d1)
+"""
+"""d2=d1.copy()
+print(d2)
+"""
+"""print(d1.keys())
+print(d1.values())
+print(d1.items())
+"""
+
+# print(d1.get("phy"))
+
+"""l1=["krishiv","het"] 
+# d1={"krishiv":90 ,"het" :90}
+
+d2 =dict.fromkeys(l1,90)
+print(d2)
+"""
+# d2["het"] =88
+# print(d2)
+
+"""d1.update(d2)
+print(d1)
+"""
+
+d1={"phy":90 ,"che" :78,"com":900}
+
+"""print(d1.pop("phy"))
+print(d1)
+"""
+"""
+d1.popitem() # remove last value  from dict
+print(d1)
+"""
+
+d1.setdefault("ss",89)
+print(d1)
