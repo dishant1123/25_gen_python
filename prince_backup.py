@@ -490,9 +490,73 @@ l2=[[1,10],[4,6],[0,9]]
 # sort the array element for 2 postion element : 
 # output  : [[4,6],[0,9],[1,10]]
 
+"""
 for i in range (len(l2)) :  # 0 -3
     for j in  range(len(l2)-1):  # 0 -2  
         if l2[j][1] > l2[j+1][1]:   # if l2[0][1] > l2[1][1]  = 10 >6> 
             l2[j],l2[j+1] =l2[j+1],l2[j] #   l2[0],l2[1]        =l2[1],l2[0]
 print(l2)
-    
+"""
+
+#tuple : immutable sequence element ==> you can't changes in tuple.
+
+"""
+t1=(1,2,3,4,5,6,7,8,9,10,"prince",9j,90.89)
+print(t1)
+print(type(t1))
+
+t2=1,2,3,4,5,6,7,8,9,10,"prince",9j,90.89
+print(t2)
+print(type(t2))
+
+t3=90, 
+print(t3)
+print(type(t3))
+"""
+# buit in function  : len min max sorted sum
+"""
+t1=(10,28,3,4,5,6,7,8,9,10,90.89)
+
+print(len(t1))
+print(min(t1))
+print(max(t1))
+print(sorted(t1))  # asc to desc
+print(sorted(t1,reverse=True)) # desc to asc 
+print(sum(t1))
+"""
+
+# slicing :
+"""
+t1=(10,28,3,4,5,6,7,8,9,10,90.89)
+
+print(t1[0])
+print(t1[2:5])   # start 2  end 5  ==>ending index is not included
+print(t1[2 :6:2])
+print(t1[  : :2])
+print(t1[  : :-2])
+print(t1[  : :-1])
+
+"""
+
+# method :
+
+"""t1=(10,28,3,4,5,6,7,8,9,10,90.89)
+
+print(t1.count(10))
+print(t1.index(10))
+print(t1.index(10,1,20))
+"""
+# mcq : 
+"""
+t1=(12,13,14,0,[1,2,3],89,90)
+
+t1[4].append("krishiv")
+print(t1)
+
+options : 
+a. error  #s m m p 
+b. (12,13,14,0,[1,2,3,"krishiv"],89,90)  #p d  b  p d  j 
+c. (12,13,14,0,[1,2,3],"krishiv",89,90)  # c 
+d. none  # m 
+"""
+
