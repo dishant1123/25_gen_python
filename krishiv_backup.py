@@ -529,3 +529,25 @@ ouptut :  first o index : 6
          
 """
 
+# replace : 
+
+"""s1 ="my Name is krishiv."
+
+print(s1.replace("k","K"))
+print(s1.replace(" ","",1))
+print(s1.replace("is","",2))
+"""
+
+# task :4 
+"""
+input  : restart 
+output : resta#t
+"""
+
+# task  :5 
+"""
+ask user to enter the  string  and  replace the first space  and last space with "#" and "#" respectively.
+
+input  :my name is krishiv.
+output  my#name is#krishiv. 
+"""
