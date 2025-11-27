@@ -445,7 +445,8 @@ print(sorted(s1,reverse=True))  # desc to asc
 
 # slicing: 
 
-"""s1 = "my name is krishiv."
+"""
+s1 = "my name is krishiv."
 
 print(s1[3])
 print(s1[2])
@@ -473,8 +474,58 @@ input  2 :full
 ouput 1:fulor 
 output 2:coll
 """
+# method  : 
+
+s1 ="my Name is krishiv."
+
+"""print(s1.capitalize())
+print(s1.lower())
+print(s1.upper())
+print(s1.title())
+print(s1.swapcase())
+print(s1.casefold())
+"""
+
+"""s2="happy chirstmas" 
+print(s2)
+print(s2.center(50,"@"))
+print(s2.ljust(50,"@"))
+print(s2.rjust(50,"@"))
+"""
+# count ,  index , rindex, find rfind : 
+s1 ="my Name is krishiv."
+
+"""print(s1.count("k"))
+print(s1.count("i"))
+print(s1.count("i",9,20))
+
+print(s1.index("k"))
+print(s1.index("i"))
+print(s1.index("i",9,20))
+print(s1.index("i",14,20))
+
+print(s1.rindex("i"))
+print(s1.rindex("i",9,15))
+print(s1.rindex("i",8,12))
+
+print(s1.find("k"))
+print(s1.find("i"))
+print(s1.find("i",9,20))
+print(s1.find("i",14,20))
 
 
+print(s1.rfind("i"))
+print(s1.rfind("i",9,15))
+print(s1.rfind("i",8,12))
+"""
 
-
+# task  :3 
+"""
+input  :  i am going to goa next month. 
+ouptut :  first o index : 6 
+         second o index : 12 
+         third o index :  15
+         fourth o index : 24 
+         
+"""
 
