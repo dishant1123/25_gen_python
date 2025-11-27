@@ -420,5 +420,61 @@ d1.popitem() # remove last value  from dict
 print(d1)
 """
 
-d1.setdefault("ss",89)
+"""d1.setdefault("ss",89)
 print(d1)
+"""
+
+# string : immutable sequence of character .
+
+"""
+s1 = "my name is krishiv."
+print(s1)
+print(type(s1))
+
+"""
+# built in function  : len min max sorted  
+
+"""
+s1 = "my name is krishiv."
+print(len(s1))
+print(min(s1))
+print(max(s1))
+print(sorted(s1))  # asc to desc
+print(sorted(s1,reverse=True))  # desc to asc
+"""
+
+# slicing: 
+
+"""s1 = "my name is krishiv."
+
+print(s1[3])
+print(s1[2])
+print(s1[2 :5])
+print(s1[2 :8 :2])
+print(s1[-2])
+print(s1[ : :-2])
+print(s1[ : :2])
+print(s1[ : :-1])
+"""
+
+# task :1 
+"""
+input : dishant dipakkumar shah 
+output : d.d.shah
+"""
+
+# task :2 
+"""
+ask user to enter the two string  and  swap the first three character of the second string with the first three character of the first string.
+
+input  1: color 
+input  2 :full 
+
+ouput 1:fulor 
+output 2:coll
+"""
+
+
+
+
+
