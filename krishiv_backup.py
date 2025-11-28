@@ -671,3 +671,78 @@ ask user to enter the  valid  password below conditions .
 3. must contain  at least one special character.
 4. must contain  at least one digit.
 """
+"""while True:
+    password =  input('enter a password :')
+    a = False
+    b = False
+
+    if len(password)<8:
+        print('Invalid Password...')
+    else:
+        for i in password:
+            if i.isdigit():
+                a = True
+            elif not i.isalnum():
+                b = True
+            if a and b:
+                print('Valid Password...')
+                break
+        else:
+            if not a :
+                print('Minimum 1 digit Required...')
+            if not b:
+                print('Minimum 1 Special Character Required...')
+    if a and b :
+        break
+"""
+
+# set : mutable  but  no repeation  allowed in set. unordered collection of unique elements.
+
+"""
+s1={1,2,3,4,5,5,6,7,7,8,9,10} 
+print(s1)
+
+l1=[1,2,2,3,3,4,4,5,6,7,7,8,9]
+l2 =set(l1)
+print(list(l2)) 
+"""
+
+# built in function  :  len  min max sorted sum
+
+"""s1={1,2,3,4,5,5,6,7,7,8,9,10} 
+
+print(len(s1))
+print(min(s1))
+print(max(s1))
+print(sorted(s1))  # asc to desc 
+print(sorted(s1,reverse=True))  #  desc to asc
+print(sum(s1))
+"""
+
+# slicing  : 
+"""
+s1={-1,0,3,4,5,5,6,7,7,8,9,10}
+print(s1[1])  # not slincing  poss in  set bcz of unordered collection.
+
+"""
+
+# method  : 
+
+# s1={-1,0,3,4,5,5,6,7,7,8,9,10}
+
+"""s1.add(120)
+print(s1)
+"""
+
+"""s1.clear()
+print(s1)
+"""
+"""s2= s1.copy()
+print("s2=",s2)
+"""
+
+s1={1,2,3,4}
+s2={2,4,6,8,10}
+s3={1,2,3,4,5,6,7,8,9,10}
+
+print(s1.union(s2))
