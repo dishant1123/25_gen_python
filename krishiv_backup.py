@@ -546,8 +546,128 @@ output : resta#t
 
 # task  :5 
 """
-ask user to enter the  string  and  replace the first space  and last space with "#" and "#" respectively.
+ask user to enter the  string  and  replace the first space  and last space with "#" and "_" respectively.
 
 input  :my name is krishiv.
-output  my#name is#krishiv. 
+output  my_name is_krishiv. 
+"""
+s2="my name is krishiv modi."
+
+"""modify_string = s2.replace(" ","_",1)[: : -1].replace(" ","_",1)[: : -1]
+print(modify_string)
+"""
+
+"""s2 = input("Enter a string: ")
+
+modify_string = ""
+
+# find first and last space positions
+first_space = s2.find(" ")
+last_space = s2.rfind(" ")
+
+i = 0
+while i < len(s2):
+    ch = s2[i]
+
+    if i == first_space:
+        modify_string += "_"
+    elif i == last_space and i != first_space:
+        modify_string += "_"
+    else:
+        modify_string += ch
+
+    i += 1
+
+print(modify_string)
+"""
+
+# join  : 
+
+"""l1=["my","name","is","krishiv"]
+# join  with space : my name is  krishiv. 
+s2 ="@".join(l1)
+print(s2)
+"""
+s1="my name is  krishiv."
+
+"""print(s1.split()) 
+print(s1.split("i"))
+print(s1.split("is"))
+
+print(s1.rsplit("z"))
+print(s1.rsplit("is"))
+"""
+# partition , rpartition : 
+
+"""s1="my name is  krishiv."
+print(s1.partition(" "))
+print(s1.partition("i"))
+print(s1.rpartition("i"))
+"""
+
+# strip , lstrip , rstrip :
+
+"""s3="          happy chirstmas        "
+
+print(s3)
+print(s3.strip())
+print(s3.lstrip())
+print(s3.rstrip())
+"""
+s1="my name is  krishiv."
+
+"""print(s1.startswith("my "))
+print(s1.startswith("my n"))
+print(s1.startswith("y n"))
+print(s1.endswith("."))
+print(s1.endswith("krishiv."))
+print(s1.endswith("  krishiv."))
+"""
+
+# isalpha,isdigit,isnumreic,isalnum : 
+
+s3 ="krishiv"
+print(s3.isalpha())
+
+s4="krishiv90"
+print(s4.isalnum())
+
+# isdigit , isnumeric ,isdecimal :
+
+"""s5="1234"
+print(s5.isdigit())
+
+s6="123.46"
+print(s6.isnumeric())
+print(s6.isdecimal())
+
+"""
+"""s1 = "12345"
+print(f"'{s1}':")
+print(f"  isdecimal(): {s1.isdecimal()}")  # True
+print(f"  isdigit():   {s1.isdigit()}")    # True
+print(f"  isnumeric(): {s1.isnumeric()}")  # True
+
+"""
+"""s2 = "\u00B2"  # Superscript two
+print(f"'{s2}':")
+print(f"  isdecimal(): {s2.isdecimal()}")  # False (not a strict decimal)
+print(f"  isdigit():   {s2.isdigit()}")    # True (considered a digit)
+print(f"  isnumeric(): {s2.isnumeric()}")  # True (considered numeric)
+"""
+"""s3 = "\u2153"  # Vulgar fraction one third
+print(f"'{s3}':")
+print(f"  isdecimal(): {s3.isdecimal()}")  # False
+print(f"  isdigit():   {s3.isdigit()}")    # False
+print(f"  isnumeric(): {s3.isnumeric()}")  # True (considered numeric)
+"""
+
+# task  :1 
+"""
+ask user to enter the  valid  password below conditions . 
+
+1. len  min 8 character. 
+2. must contain  at least one  upper case character.
+3. must contain  at least one special character.
+4. must contain  at least one digit.
 """
