@@ -627,10 +627,10 @@ print(s1.endswith("  krishiv."))
 # isalpha,isdigit,isnumreic,isalnum : 
 
 s3 ="krishiv"
-print(s3.isalpha())
+# print(s3.isalpha())
 
 s4="krishiv90"
-print(s4.isalnum())
+# print(s4.isalnum())
 
 # isdigit , isnumeric ,isdecimal :
 
@@ -741,8 +741,196 @@ print(s1)
 print("s2=",s2)
 """
 
-s1={1,2,3,4}
+"""s1={1,2,3,4}
 s2={2,4,6,8,10}
 s3={1,2,3,4,5,6,7,8,9,10}
+"""
+"""print(s1.union(s2))
+print(s1.intersection(s2))
+print(s1.difference(s2))
 
-print(s1.union(s2))
+print(s1.symmetric_difference(s2))
+"""
+"""print(s1.difference(s2))
+s1.difference_update(s2)
+print(s1)
+"""
+"""print(s1.symmetric_difference(s2))
+print(s1)
+
+s1.symmetric_difference_update(s2)
+print(s1)
+"""
+
+"""print(s1.intersection(s2))
+print(s1)
+s1.intersection_update(s2)
+print(s1)
+"""
+
+# isdisjoint , issubset , issuperset ,: 
+
+"""
+s1={1,2,3,4}
+s2={1,3}
+s3={1,2,3,4,5,6,7,8,9,10}
+"""
+# print(s1.isdisjoint(s2))
+# print(s3.issuperset(s2))
+
+# print(s2.issubset(s1))
+
+s1={1,2,3,4}
+
+"""s1.remove(2)
+print(s1)
+
+s1.discard(63)
+print(s1)
+"""
+"""
+s2={"krishiv","het"}
+
+s2.update(s1)
+print(s2)
+"""
+"""s1={0,1,2,3,4}
+s1.pop(4)
+
+print(s1)
+"""
+
+# frozen set : immutable  set 
+
+"""fz =frozenset({1,2,3,4,5,6,6})
+print(fz)
+print(type(fz))
+
+"""
+
+# function  : 
+
+"""
+type  : 
+
+1. no arg no return 
+2. no arg  with return
+3. with arg no return
+4. with arg  with return
+"""
+# 1 :no arg no return
+"""def a():  # def keyword   a() ==> func name 
+    c=12 
+    d=90   # func intialization 
+    print(c+d)
+a() # func calling  
+a()
+
+"""
+
+# 2  with arg no return
+
+"""def g(a,b):
+    print(a+b)
+a=int(input("enter a :"))
+b=int(input("enter b :"))
+g(a,b)
+"""
+# 3 : no arg  with return 
+
+"""def h():
+    a=int(input("enter a :"))
+    b=int(input("enter b :"))
+    c=a+b 
+    return c 
+print(h())
+"""
+
+# 4 : with arg  with return
+
+"""def t(a,b):
+    return a+b 
+
+print(t(12,45))
+"""
+
+# *args : it takes only numreric arg. 
+
+"""def gh(*args):
+    print(sum(args))
+
+gh(12,12,3,5,6,7,8,9,0,34)
+"""
+
+"""def hj(*x):
+    sum =0 
+    for i in x : 
+        sum =sum + i 
+    return sum 
+print(hj(12,3,4,5,6,7,8,334,56))
+"""
+
+# **kwargs : it takes key value pair arg.
+
+"""def k(**kwargs):
+    for i ,j in  kwargs.items():
+        print(f"{i} : {j}")
+k(name="krishiv",age=21,city="delhi")
+"""
+
+# employees manag system : 
+"""
+1. add
+2. delete
+3. update
+4. search
+5.display
+"""
+
+d1={}
+
+def add():
+    id =int(input("enter the  emp id :"))
+    name =input("enter the  emp name :")
+    salary =int(input("enter the  emp salary :"))
+    d1[id] =[name,salary]
+    print("emp added successfully")
+    
+def delete_emp():
+    del_id =int(input("enter the  emp id :"))
+    if del_id in d1: 
+        del d1[del_id]
+        print("emp deleted successfully")
+    else :
+        print("emp not found")
+
+def update_emp():
+    update_id =int(input("enter the  emp id :"))
+    if update_id in d1:
+        name =input("enter the updated emp name :")
+        salary =int(input("enter the updated emp salary :"))
+        d1[update_id]=[name,salary]
+        print("emp updated successfully")
+    else :
+        print("emp not found")
+        
+# def serach_emp():
+    
+# def display_emp():
+    
+# add()
+# add()
+# print(d1)
+# delete_emp()
+# print(d1)
+# update_emp()
+# print(d1)
+
+"""
+menu  : 
+1. add
+2. delete
+3. update
+4. search
+5.display   choice = 
+"""
