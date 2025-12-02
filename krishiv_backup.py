@@ -887,7 +887,7 @@ k(name="krishiv",age=21,city="delhi")
 5.display
 """
 
-d1={}
+"""d1={}
 
 def add():
     id =int(input("enter the  emp id :"))
@@ -913,7 +913,7 @@ def update_emp():
         print("emp updated successfully")
     else :
         print("emp not found")
-        
+"""      
 # def serach_emp():
     
 # def display_emp():
@@ -934,3 +934,80 @@ menu  :
 4. search
 5.display   choice = 
 """
+# local variable :
+
+"""
+within function declare local variable  . 
+"""
+
+"""
+def x ():
+    a=100   #local variable 
+    print(a)
+x()
+print(a)  # local variable  not accessible outside function
+"""
+
+# global variable :
+"""
+x=100 
+def g():
+    print(x)  # global 
+g()
+print(x)  # global can be accessed outside function
+"""
+
+# modify global variable :
+
+"""x=100 
+def g():
+    global x 
+    x=200 
+    print(x)
+g()
+print(x)
+"""
+# lambda : one line  function 
+"""
+syntax : 
+
+lambda arg : expression 
+"""
+
+"""def add(a,b):
+    return a+b
+print(add(12,45)) 
+"""
+"""a= lambda x,y : x+y 
+print(a(23,56))
+"""
+# built in function  :  len  min max sorted sum
+
+"""b =lambda x : sorted(x,reverse=True)
+print(b([10,2,3,4,5,6,7]))
+"""
+# print : 
+"""
+a=lambda x : print("hello",x)
+a("krishiv")
+"""
+# conditional statement :
+
+"""def big():
+    a=int(input())
+    b=int(input())
+    if a>b :
+        print("a is greater than b")
+    else :
+        print("b is greater than a")
+big()
+"""
+"""
+x= lambda a,b : print("a is  big") if a>b else print("b is big")
+x(121,56)
+"""
+
+# list sort :
+# below list sort by second  element. 
+l1=[[1,2],[0,1],[4,-5]]
+
