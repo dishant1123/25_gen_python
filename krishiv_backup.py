@@ -1009,5 +1009,46 @@ x(121,56)
 
 # list sort :
 # below list sort by second  element. 
-l1=[[1,2],[0,1],[4,-5]]
+"""l1=[[1,2],  # 1,2  ==> 0 ,1 
+    [0,1],  # 0,1  ==> 0 ,1 
+    [4,-5]]  #4,-5  ==>0, 1 
 
+l1.sort(key =lambda x :x [1])
+print(l1)
+
+"""
+#task:1 
+"""l1 =[('English', 88), ('Science', 90), ('Maths', 97), ('Social sciences', 82)]
+
+l1.sort(key =lambda x :x[0])
+print(l1)
+"""
+
+# filter  : 
+"""
+l1 =[1,2,3,44,5,6,7,8,9,10]
+odd=[] 
+even =[] 
+for i in l1 :
+    i%2==0:
+        even.append(i)
+    else :
+        odd.append(i)
+print(odd)
+print(even)
+"""
+"""l1 =[1,2,3,44,5,6,7,8,9,10]
+
+a =list(filter(lambda x :x %2 ==0,l1))
+b =tuple(filter(lambda x :x %2 ==1,l1))
+
+print(a)
+print(b)
+"""
+
+# map :  
+
+l1 =[1,2,3,44,5,6,7,8,9,10]
+
+a= list(map(lambda x :x *5,l1))
+print(a)
