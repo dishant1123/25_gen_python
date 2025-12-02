@@ -1048,7 +1048,34 @@ print(b)
 
 # map :  
 
-l1 =[1,2,3,44,5,6,7,8,9,10]
+"""l1 =[1,2,3,44,5,6,7,8,9,10]
 
 a= list(map(lambda x :x *5,l1))
 print(a)
+
+"""
+
+d1=[]
+a=int(input("Enter the number of inputs : "))
+
+for i in range(a):
+    name=input("Enter the name : ")
+    marks=int(input("Enter the grade : "))
+
+    d1.append([name,marks])
+print(d1) 
+
+b=list(map(lambda x: x[1],d1))
+print(b) 
+
+unique = sorted(list(set(b)))
+print(unique) # [12,56,89]
+
+second_lowest = unique[1] 
+result = list(filter(lambda x :x [1] ==second_lowest,d1))  # result =56 
+
+result.sort(key =lambda x :x[0])  # alphabetical order
+
+for name ,marks in result :
+    print(name)
+    print(marks)
