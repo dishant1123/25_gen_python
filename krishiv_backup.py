@@ -1055,7 +1055,7 @@ print(a)
 
 """
 
-d1=[]
+"""d1=[]
 a=int(input("Enter the number of inputs : "))
 
 for i in range(a):
@@ -1079,3 +1079,16 @@ result.sort(key =lambda x :x[0])  # alphabetical order
 for name ,marks in result :
     print(name)
     print(marks)
+"""
+
+"""
+royal kid bank  : 
+
+1. user name  password create 
+
+1. login   ==> user name , password  match  ==>25000 tf  
+2. deposit   ==>5000  ==>balance =30000 
+3. withdraw  ===> min amt 10000 required   ==>25000 
+4. check balance  
+5. exit 
+"""
