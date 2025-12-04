@@ -1092,3 +1092,60 @@ royal kid bank  :
 4. check balance  
 5. exit 
 """
+
+# module : random  , tkinter , math cmath date time ,time 
+
+import math as m 
+
+"""print(m.factorial(5))
+print(m.pi)
+print(m.e)
+print(m.sqrt(45))
+
+print(m.log(100,10))
+print(m.lcm(10,20))
+print(m.gcd(100,20))
+print(m.remainder(10,3))
+print(m.fsum([1,2,3,4,5]))
+print(m.floor(12.56))
+print(m.ceil(12.06))
+"""
+import random as r 
+
+# print(r.random())   # 0-1 
+# print(r.randrange(1,10,2))
+# print(r.randint(1,10))  # both  value included 
+
+# print(r.choice([1,2,3,4,5,"krishiv"]))
+# print(r.choices([1,2,3,4,5,"krishiv"],k=3))
+
+l1=[1,2,3,4,5,"krishiv"]
+
+print(l1)
+
+r.shuffle(l1)
+print(l1)
+
+# game  : 
+
+"""
+rock paper scissor : 
+
+user vs com   : 
+
+choice = rock paper scissor 
+10 rounds :
+user score =0 
+com score =0
+
+if u==1 and com==1 or u==2 and com==3 or u==3 and com==2 :
+    tie 
+elif u==1 and com==3 or u==3 and com==2  or u==2 and com==1 :
+    user win 
+    user score +=1
+else :
+    com win
+    com score +=1
+    
+winner : user > com   ==> user win else com 
+"""
