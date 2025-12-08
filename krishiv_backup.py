@@ -1230,3 +1230,8 @@ a=cal.calendar(2025)
 b=cal.month(2026,1)
 print(b)
 """
+
+from mypackage import functions as f ,krishiv as k 
+
+print(f.power(2,5))
+k.kri_modi()
