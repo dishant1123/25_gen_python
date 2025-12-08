@@ -1119,13 +1119,13 @@ import random as r
 # print(r.choice([1,2,3,4,5,"krishiv"]))
 # print(r.choices([1,2,3,4,5,"krishiv"],k=3))
 
-l1=[1,2,3,4,5,"krishiv"]
+"""l1=[1,2,3,4,5,"krishiv"]
 
 print(l1)
 
 r.shuffle(l1)
 print(l1)
-
+"""
 # game  : 
 
 """
@@ -1148,4 +1148,85 @@ else :
     com score +=1
     
 winner : user > com   ==> user win else com 
+"""
+
+# computer guessing game  : 
+"""
+range  ==> 1,10 
+"""
+"""print("computer guessing game")
+
+secret = r.randint(1,20) 
+attempts =0 
+while True :
+    guess = int(input("enter the guess : "))
+    attempts +=1
+    if guess == secret :
+        print("you win")
+        break
+    elif guess < secret :
+        print("too low")
+    elif guess > secret :
+        print("too high")
+    else :
+        print("try again")
+    if attempts ==5  :
+        print("attempt over",secret)
+        break
+    
+"""
+import datetime as dt  
+
+# a= dt.datetime.now()
+# a=dt.datetime.today()
+# a= dt.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
+
+"""a=dt.datetime(2022,1,1,12,30,45)
+print(a)
+print(a.month)
+print(a.day)
+print(a.year)
+print(a.hour)
+print(a.minute)
+print(a.second)
+"""
+
+import time as t
+
+"""a=t.time()
+print(a)
+
+b=t.ctime()
+print(b)
+
+c=t.asctime()
+print(c)
+
+d=t.localtime()
+print(d)
+"""
+
+"""for i in range(10):
+    t.sleep(0.50)
+    
+    print(i)
+"""
+"""
+from datetime import timedelta 
+
+today = dt.datetime.today()
+future = today + timedelta(days=300)
+
+print(f"today is {today}")
+print(f"in 300 days it will be {future}")
+"""
+
+"""
+import calendar as cal 
+
+a=cal.calendar(2025)
+# print(a)
+
+b=cal.month(2026,1)
+print(b)
 """
