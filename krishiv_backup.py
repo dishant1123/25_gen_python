@@ -1287,6 +1287,7 @@ e.show()
 
 # ex :4 protected
 
+"""
 class employees :
     _name="krishiv"
     _salary =90000 
@@ -1298,3 +1299,31 @@ class manager(employees):
 
 m=manager()
 m.show()
+"""
+
+class bank :
+    name =input("enter the name :")
+    branch =input("enter the branch :")
+    acc_no =int(input("enter the account number :"))
+    balance =25000 
+    
+    def deposit(self,amt):
+        self.balance =self.balance+amt
+        print(f"amt deposited is {amt} and balance is {self.balance}")
+    
+    def withdraw(self,amt):
+        if self.balance -amt >=10000 :
+            self.balance =self.balance-amt
+            print(f"amt withdrawn is {amt} and balance is {self.balance}")
+        else :
+            print("insufficient balance and  min balance maintain 10000 rs. ")
+    
+    def check_balance(self):
+        print(f"balance is {self.balance}")
+        
+b=bank()
+b.deposit(5000)
+b.withdraw(10000)
+b.check_balance()
+    
+    
