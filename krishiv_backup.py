@@ -1231,7 +1231,70 @@ b=cal.month(2026,1)
 print(b)
 """
 
+"""
 from mypackage import functions as f ,krishiv as k 
 
 print(f.power(2,5))
 k.kri_modi()
+"""
+# oops : 
+"""
+1. inheritance 
+2. polymorphism 
+3. encapsulation 
+4. abstraction
+
+"""
+# ex :1 
+"""
+class person :  # person class name  
+    name ="krishiv"
+    age =20    # name  age  ==> class data member 
+
+p=person()  # p object  ==> class person 
+print("name is  :",p.name)  # object ==> data member 
+print("age is  :",p.age)
+"""
+
+#ex :2 
+
+"""class person :
+    name=input("enter the name :")
+    age=int(input("enter the age :"))
+    
+    def dispaly(self):  # self ==> keyword  ==> current object 
+        print("name is :",self.name)
+        print("age is :",self.age)
+
+p=person()
+p.dispaly()
+"""
+
+# ex :3 private 
+
+"""class employees :
+    __name = "krishiv"
+    __salary =80000 
+
+    def show(self):
+        print(self.__name)
+        print(self.__salary)
+e=employees()
+# print(e.__name)
+# print(e.__salary)  # not accessible  outside the class bcz of  private. 
+e.show()
+"""
+
+# ex :4 protected
+
+class employees :
+    _name="krishiv"
+    _salary =90000 
+   
+class manager(employees):
+    def show(self):
+        print(self._name)
+        print(self._salary)
+
+m=manager()
+m.show()
