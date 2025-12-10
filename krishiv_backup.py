@@ -1301,7 +1301,7 @@ m=manager()
 m.show()
 """
 
-class bank :
+"""class bank :
     name =input("enter the name :")
     branch =input("enter the branch :")
     acc_no =int(input("enter the account number :"))
@@ -1326,4 +1326,69 @@ b.deposit(5000)
 b.withdraw(10000)
 b.check_balance()
     
+"""
+
+# constructor  : automatically called when object is created.
+"""
+1. default constructor
+2. parameterized constructor
+3. non parameterized constructor
+4. constructor overloading
+"""
+#1 : default constructor
+"""class vehicle : 
+    def __init__(self):# __init__ ==> special  method / constructor  
+        print("default constructor")
+        print("vehicle created")
+
+v=vehicle()
+"""
+
+# 2: non parameterized constructor
+
+"""class vehicle :
+    def __init__(self):
+        self.name ="car"
+        self.type ="sedan"
+    
+    def show(self):
+        print(self.name)
+        print(self.type)
+v=vehicle()
+v.show()
+print(v.name)
+print(v.type)
+"""
+# 3: parameterized constructor
+
+"""class vehicle :
+    def __init__(self,name,type):
+        self.name =name 
+        self.type =type
+    
+    def show(self):
+        print(self.name)
+        print(self.type)
+
+v=vehicle("car","sedan")
+v.show()
+
+"""
+
+# 4 : constructor overloading
+
+class vehicle :
+    def __init__(self):
+        print("default constructor")
+    
+    def __init__(self):
+        self.name ="car"
+        self.type ="sedan"
+
+    def show(self):
+        print(self.name)
+        print(self.type)
+
+v=vehicle()
+v.show()
     

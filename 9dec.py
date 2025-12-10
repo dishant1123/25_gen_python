@@ -10,7 +10,7 @@ output  :{"ram":90,"sita":77,"ravan":66}
 
 # task  :2 above  dict  sorted by values . 
 
-d1={}
+"""d1={}
 for i in range(3):
     name =input("enter the name  : ")
     marks =int(input("enter the marks :"))
@@ -23,7 +23,7 @@ for i in sorted_marks: #[34,56,90]
     for j,k in d1.items() : #{'ram': 90, 'sita': 56, 'ravan': 34}
         if i ==k : 
             d2[j] =k 
-print(d2)
+print(d2)"""
 
 # task :3  sorted by  keys . 
 
@@ -34,3 +34,22 @@ input  : "mississippi"
 output : {'m':1,'i':4,'s':4,'p':2}
  
 """
+"""s= "mississippi."
+d1={}
+
+for i in s:  # miss 
+    if i  in d1:   # 
+        d1[i] +=1   # d[s] =2
+    else :
+        d1[i]=1  # d[m]=1 d[i]=1 d[s]=1 
+print(d1)
+"""
+
+# task :5  merge two dict in one . 
+"""
+d1={"krishiv":90 ,"het" :90}
+d2={"krish":90 ,"hetavi" :90}
+
+output  :{"krishiv":90 ,"het" :90,"krish":90 ,"hetavi" :90}
+"""
+ 
