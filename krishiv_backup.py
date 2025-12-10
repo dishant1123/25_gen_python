@@ -1377,7 +1377,7 @@ v.show()
 
 # 4 : constructor overloading
 
-class vehicle :
+"""class vehicle :
     def __init__(self):
         print("default constructor")
     
@@ -1391,4 +1391,113 @@ class vehicle :
 
 v=vehicle()
 v.show()
+"""
+# inheritance : 
+"""
+1.single inheritance
+2.multiple inheritance
+3. multi level inheritance
+4. hierarchical inheritance
+5. hybrid inheritance
+
+"""
+
+#1 : 
+
+"""class student :
+    def __init__(self):
+        self.name ="krishiv"
+        self.age =20
     
+    def display(self):
+        print("name is :",self.name)
+        print("age is :",self.age)
+class teacher(student):
+    def __init__(self):
+        # student.__init__(self)  # base class constructor called
+        super().__init__()
+        self.t_name = "vyas sir"
+        self.subject ="maths"
+    
+    def show(self):
+        print("information of teacher and  student")
+        self.display()
+        print(self.t_name)
+        print(self.subject)
+
+t=teacher()
+t.show()
+"""
+
+# 2 : 
+"""
+class a : 
+class b :
+class c(a,b) 
+
+"""
+
+"""class father :
+    def __init__(self,f_name):
+        self.f_name =f_name
+        
+class mother :
+    def __init__(self,m_name):
+        self.m_name =m_name
+        
+class child(father,mother):  # MRO : method resolution order
+    def __init__(self,c_name,f_name,m_name):
+        father.__init__(self,f_name)
+        mother.__init__(self,m_name)
+        self.c_name=c_name
+        
+    def show(self):
+        print("child name is :",self.c_name)
+        print("father name is :",self.f_name)
+        print("mother name is :",self.m_name)
+        
+c=child("raj","ramesh","simran")
+c.show()
+"""
+
+# 3 :
+"""
+class a :
+class b(a):
+class c(b):
+"""
+
+class vehicle :
+    def __init__(self):
+        self.__type = "two wheeler"
+        self.__seat_cap =3
+        
+    def show(self):
+        print("vehicle type is  :",self.__type)
+        print("seating capacity is  ",self.__seat_cap)
+
+class bike(vehicle):
+    def __init__(self,model,color):
+        super().__init__()
+        self.model =model
+        self.color =color
+    
+    def display(self):
+        self.show()
+        print("model is  :",self.model)
+        print("color is  :",self.color)
+
+class royal_elfield(bike):
+    def __init__(self,model,color,seat):
+        super().__init__(model,color)
+        self.seat=seat
+    
+    def all_info(self):
+        self.display()
+        print("seat is  :",self.seat)
+
+r=royal_elfield("classic","black",2)
+r.all_info()
+
+b=bike("fz-150","blue")
+b.display()
