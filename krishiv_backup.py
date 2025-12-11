@@ -1467,14 +1467,14 @@ class b(a):
 class c(b):
 """
 
-class vehicle :
+"""class vehicle :
     def __init__(self):
-        self.__type = "two wheeler"
-        self.__seat_cap =3
+        self._type = "two wheeler"
+        self._seat_cap =3
         
     def show(self):
-        print("vehicle type is  :",self.__type)
-        print("seating capacity is  ",self.__seat_cap)
+        print("vehicle type is  :",self._type)
+        print("seating capacity is  ",self._seat_cap)
 
 class bike(vehicle):
     def __init__(self,model,color):
@@ -1501,3 +1501,50 @@ r.all_info()
 
 b=bike("fz-150","blue")
 b.display()
+"""
+
+# 5 : 
+"""
+class a :
+class b(a):
+class c(a):
+class d(b,c)
+
+"""
+"""class A :
+    def __init__(self):
+        self.name ="krishiv"
+
+class B(A):
+    def __init__(self):
+        super().__init__()
+        self.age =20 
+        
+class C(A):
+    def __init__(self):
+        super().__init__()
+        self.city ="ahm"
+        
+class D(B,C):
+    def __init__(self):
+        B.__init__(self)
+        C.__init__(self)
+        self.clg ="charusat"
+        
+    def show(self):
+        print("name is  :",self.name)
+        print("age is  :",self.age)
+        print("city is  :",self.city)
+        print("clg is  :",self.clg)
+
+d=D()
+d.show()
+"""
+
+# 4 : hirearchical inheritance : multiple derived class inherit from same base class.
+"""
+class a :
+class b(a): 
+class c(a):
+class d(a):
+"""
