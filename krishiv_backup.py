@@ -1548,3 +1548,44 @@ class b(a):
 class c(a):
 class d(a):
 """
+
+# encapsulation :binding data and method into single unit and restrict direct access to some parts of an object to protect the data.
+"""
+use : 
+1.protect data form accidental  modification 
+2. direct access to private data .
+3. to hide the data  from the user.
+
+2 method  : 
+1. get method :data print   
+2. set method: new value set. 
+
+"""
+
+class student :
+    def __init__(self):
+        self.__name="krishiv"
+        self.__age =20
+    
+    def get_name(self):
+        print(self.__name)
+
+    def set_age(self,new_age):
+        self.__age =new_age
+        
+    def show(self):
+        print("age is :",self.__age)
+        print("name is :",self.__name)
+s=student()
+# print(s.__name) # bcz  of  private you can't access the data directly
+# s.get_name()
+# s.show()
+
+# s.set_age(25)
+# s.show()
+print(getattr(s,"__name","krishiv"))
+setattr(s,"__age",25)
+print(s.__age)
+
+
+
