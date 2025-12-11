@@ -1589,3 +1589,30 @@ print(s.__age)
 
 
 
+"""
+Write a python program that has class store which keeps record of code and price of each product. Display a menu of all 
+products to the user and prompt him to enter the quantity of each item required. generate a bill and display total amount.
+Sample Output:
+enter no of items: 3
+enter code of item: milk
+enter cost of item: 30
+enter code of item: apple
+enter cost of item: 35
+enter code of item: gems
+enter cost of item: 40
+ Item Code  Price
+  milk   30
+  apple   35
+  gems   40
+Enter quantity of each item: 
+Enter quantity of milk : 2
+Enter quantity of apple : 3
+Enter quantity of gems : 4
+************************Bill**********************
+  ITEM  PRICE  QUANTITY        SUBTOTAL
+    milk   30          2  60
+    apple   35          3  105
+    gems   40          4  160
+**************************************
+Total=  325
+"""
