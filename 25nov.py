@@ -88,5 +88,21 @@ input  : t1 =[(1,2,3),(4,5,6),(7,8,9)]
 output : t1 =[(1,2,100),(4,5,100),(7,8,100)]   
 """
 
+"""
+Write a Python program to create a dictionary grouping a sequence of key-value pairs into a dictionary of lists.
+Original list:
+[('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+Grouping a sequence of key-value pairs into a dictionary of lists:
+{'yellow': [1, 3], 'blue': [2, 4], 'red': [1]}
+"""
 
-
+"""
+l1 =[('yellow', 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)]
+d1={}
+for i , j in l1 :   # blue  2  
+    # print(i)
+    if i not in d1:  # 
+        d1[i]=[]     # d1[yellow] = []  d1[bule] =[] 
+    d1[i].append(j)   # d1[yellow].(3)
+print(d1)
+"""
