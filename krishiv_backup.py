@@ -1562,7 +1562,7 @@ use :
 
 """
 
-class student :
+"""class student :
     def __init__(self):
         self.__name="krishiv"
         self.__age =20
@@ -1577,16 +1577,16 @@ class student :
         print("age is :",self.__age)
         print("name is :",self.__name)
 s=student()
+"""
 # print(s.__name) # bcz  of  private you can't access the data directly
 # s.get_name()
 # s.show()
 
 # s.set_age(25)
 # s.show()
-print(getattr(s,"__name","krishiv"))
-setattr(s,"__age",25)
-print(s.__age)
-
+# print(getattr(s,"__name","krishiv"))
+# setattr(s,"__age",25)
+# print(s.__age)
 
 
 """
@@ -1616,3 +1616,76 @@ Enter quantity of gems : 4
 **************************************
 Total=  325
 """
+
+#polymorphism : one name -- many forms . 
+"""
+1. method  overloading 
+2. method overriding 
+"""
+
+# ex :1 method  overloading with default parameter
+
+"""class calculator :
+    def add(self,a,b=0,c=0):
+        return a+b+c 
+    
+c=calculator()
+print(c.add(10))
+print(c.add(10,20))
+print(c.add(10,20,30))
+"""
+# ex :2 using  *args : 
+
+"""class mathoperation :
+    def multiply(self,*nums):
+        result =1 
+        for i in nums :
+            result *=i
+        return result 
+
+m=mathoperation()
+print(m.multiply(1))
+print(m.multiply(2,67))
+print(m.multiply(2,67,89))
+print(m.multiply(1,3,5,6,9))
+"""
+
+# method  overriding  :
+
+"""class animal :
+    def sound(self):
+        print("animal sound")
+
+class cat(animal):
+    def sound(self):
+        print("cat sound")
+
+class dog(animal):
+    def sound(self):
+        print("dog sound")
+
+class bird(animal):
+    def sound(self):
+        print("bird sound")
+        
+c=cat()
+c.sound()
+d=dog()
+d.sound()
+b=bird()
+b.sound()
+"""
+
+# using super() :
+
+class animal :
+    def start(self):
+        print("animal sound start")
+
+class cat(animal):
+    def start(self):
+        super().start()
+        print("cat sound start")
+
+c=cat()
+c.start()
