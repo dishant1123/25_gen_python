@@ -559,4 +559,49 @@ b. (12,13,14,0,[1,2,3,"krishiv"],89,90)  #p d  b  p d  j
 c. (12,13,14,0,[1,2,3],"krishiv",89,90)  # c 
 d. none  # m 
 """
+# function  : 4 type : 
 
+"""
+1. no arg no return
+2. no arg with return
+3. with arg no return
+4. with arg with return
+"""
+#1:
+"""
+def add():  # def keyword  add ==>func name 
+    a=10
+    b=90  # intial value 
+    c=a+b
+    print(c)
+add()  #call the function
+"""
+
+# 3 :
+"""def add(a,b):
+    c=a+b
+    
+    print(c)
+add(10,90)
+add("prince","patel")
+add(34.78,78.90)
+add(45+9j,23+8j)
+"""
+
+# 2 : no arg with return 
+
+"""def add():
+    a=int(input("enter the  number 1:"))
+    b=int(input("enter the  number 2:"))
+    c=a+b 
+    return c 
+print(add())
+"""
+
+#4 : with arg with return
+def add(a,b):
+    return a+b
+print(add(10,90))
+print(add("prince","patel"))
+print(add(34.78,78.90))
+print(add(45+9j,23+8j))
