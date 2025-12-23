@@ -24,7 +24,8 @@ print(a+b)
 
 # slicing  : 
 
-"""s1="my name is pinal patel and live in ahmedabad."
+"""
+s1="my name is pinal patel and live in ahmedabad."
 #index start  with  : 0   ==> l to r 
 #neg index start  with  : -1 ==> r to l 
 
@@ -55,3 +56,53 @@ input  b : full
 output a: fulor 
 output b: coll  
 """
+# method  : 
+
+s1="My name Is pinal patel and live in ahmedabad."
+
+"""
+print(s1.capitalize())
+print(s1.lower())
+print(s1.upper())
+print(s1.title())
+print(s1.casefold())
+print(s1.swapcase())
+"""
+s2="happy holi"
+
+"""
+print(s2.center(50))
+print(s2.center(50,"-"))
+print(s2.ljust(50,"-"))
+print(s2.rjust(50,"-"))
+"""
+
+s1="My name is pinal patel and live in ahmedabad."
+
+"""
+print(s1.count("i"))
+print(s1.count("i",9,20))  # 9 start pos index 20 end pos index
+"""
+
+print(s1.replace("pinal","heli"))
+print(s1.replace("is",""))
+print(s1.replace(" ",""))
+print(s1.replace(" ","",1))
+print(s1.replace(" ","",2))
+
+
+# task  :3 
+"""
+input  a : "restart"
+output a: resta@t  
+ """
+ 
+# task  :4 
+
+"""
+ask user to enter the  string  and  first space and  last space  replace with "_" . 
+
+input a:"My name is pinal patel and live in ahmedabad."
+output a :"My_name is pinal patel and live in_ahmedabad."
+"""
+
