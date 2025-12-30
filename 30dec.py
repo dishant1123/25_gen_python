@@ -27,4 +27,38 @@ output  : first o index number :6
          4 th o index number : 24
 """
 
+# split r spilt : 
+
+"""s1="my name is het thakkar."
+
+print(s1.split())
+print(s1.split("i"))
+print(s1.split("a"))
+
+print(s1.rsplit("a"))
+"""
+# hw  : diffrence between split and rsplit. 
+
+# partition, r partition :
+
+"""s1="my name is het thakkar."
+
+print(s1.partition("i"))
+print(s1.partition("a"))
+print(s1.partition("het"))
+
+print(s1.rpartition("a"))
+"""
+
+# task  :2 
+"""
+Write a python program that take one input string and in output count the no of words,
+Find No of letters in String,Find the longest word in the String.
+For Example:-
+Input:-This is the python program
+Output:-No of Words=5
+	    No of letters=26(including whitespace)
+	    Longest Word=program
+
+"""
 
