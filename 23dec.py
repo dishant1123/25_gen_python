@@ -84,12 +84,13 @@ print(s1.count("i"))
 print(s1.count("i",9,20))  # 9 start pos index 20 end pos index
 """
 
+"""
 print(s1.replace("pinal","heli"))
 print(s1.replace("is",""))
 print(s1.replace(" ",""))
 print(s1.replace(" ","",1))
 print(s1.replace(" ","",2))
-
+"""
 
 # task  :3 
 """
@@ -105,4 +106,16 @@ ask user to enter the  string  and  first space and  last space  replace with "_
 input a:"My name is pinal patel and live in ahmedabad."
 output a :"My_name is pinal patel and live in_ahmedabad."
 """
+
+s="My name is pinal patel and live in ahmedabad."
+
+modify_string =s.replace(" ","_",1)[: : -1].replace(" ","_",1)[: : -1]
+# print(modify_string) 
+
+s1="my name is ram and wife name is sita."
+print(s1.replace(" ","_"))
+print(s1.replace(" ","_",2))
+print(s1.replace(" ","_",4))
+print(s1.replace("is"," ",1))
+
 
