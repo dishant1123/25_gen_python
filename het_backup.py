@@ -108,4 +108,60 @@ r= set(l1)
 print(list(r))
 """
 
-l2=["het","het","dhruv","moksh","dhruv"]
+# l2=["het","het","dhruv","moksh","dhruv"]
+
+#string  : immutable sequence of characters
+
+"""
+s1="my name is het."
+print(s1)
+print(type(s1))
+"""
+
+"""a="het"
+b="thakkar"
+print(a+" "+b)
+"""
+# built in function  :  len min max sorted sum 
+
+"""s1="my name is het."
+print(len(s1))
+print(min(s1))
+print(max(s1))
+print(sorted(s1))
+print(sorted(s1,reverse=True))
+# print(sum(s1))
+"""
+# slicing  :
+
+s1="my name is het and best friend name is moksh."
+
+"""print(s1[0])
+print(s1[3:5])
+print(s1[-2])
+print(s1[-5 :-1])
+print(s1[-1 :-9 :-1])
+
+print(s1[3:10 :2])
+print(s1[ :  :2])
+print(s1[ :  :-2])
+print(s1[ :  :-1])
+"""
+
+# task  :1 
+"""
+input : "dishant dipakkuamr shah"
+output : "d.d.shah"
+"""
+# task :2 
+"""
+ask user to enter the  two string and  swap the first three character of the second string and wise versa.
+
+input  a: "color"
+input  b: "full"
+output a: "fulor"
+output b: "coll"
+"""
+
+
+
