@@ -78,3 +78,18 @@ task  : 10
 	[3, 3, 7, 5, 2, 4, 0]
 
 """
+
+# hw : 
+"""
+ask user to create password  condition :
+    1.password len ==> min 8
+    2.1 upper case 1 lower case 1 digit 1 special char
+    
+example :
+    password : moksh1211   ==> wrong  ==> special char, upper  
+    
+    password : Moksh1211   ==> wrong  ==> special char 
+    password : Moksh1211!  ==> coorect
+   
+hint  : isdigit() , islower() ,isupper() , isalpha() , isalnum()
+"""
