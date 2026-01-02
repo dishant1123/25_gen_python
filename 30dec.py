@@ -62,3 +62,11 @@ Output:-No of Words=5
 
 """
 
+s1="this is the python program"
+letters = len(s1)
+words =s1.split()  # ["this","is","the","python","program"]
+
+longest_word = max(words, key=len)
+print(longest_word)
+print(len(words))
+print(letters)
