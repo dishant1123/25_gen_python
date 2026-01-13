@@ -15,7 +15,7 @@ d1= {"name" : "moksh" , "age" : 20 , "gender" : "male"}
 d1["sports"] ="cricket"
 print(d1)
 """
-d1={}
+'''d1={}
 def emp_add():
     id=int(input("enter the id : "))
     name =input("enter the  name  : ")
@@ -73,3 +73,4 @@ id   name    age  salary
 1     het    20     90000
 2     moksh  21     89000 
 """
+'''
