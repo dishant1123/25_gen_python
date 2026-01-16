@@ -1677,7 +1677,7 @@ b.sound()
 """
 
 # using super() :
-
+"""
 class animal :
     def start(self):
         print("animal sound start")
@@ -1689,3 +1689,122 @@ class cat(animal):
 
 c=cat()
 c.start()
+"""
+
+#abstraction  :
+"""
+it hide implementation details    and show only essential features of the user. 
+
+1. class  : abstract class   ==> from abc import ABC  ==> abstract base class
+2. method  : abstract method  ==> decorator  ==> @abstractmethod
+
+not creating object when you declare abstract class.
+"""
+
+# ex :1 abstract class
+from abc import ABC,abstractmethod 
+
+"""class shape(ABC):
+    
+    @abstractmethod
+    def area(self):
+        pass 
+
+class circle(shape):
+    def area(self,radius):
+        self.radius =radius
+        return 3.14*self.radius**2
+
+c=circle()
+print(c.area(8))
+"""
+#ex:2 
+"""
+class bank(ABC):
+    def __init__(self,name,acnumber,balance):
+        self.name =name
+        self.acnumber =acnumber
+        self.balance =balance
+        
+    @abstractmethod
+    def deposit(self,amt):
+        pass 
+    
+    @abstractmethod
+    def withdraw(self,amt):
+        pass
+    
+    def check_balance(self):
+        print(f"balance is {self.balance}")
+        
+class sbi(bank):
+    def __init__(self, name, acnumber, balance,branch):
+        super().__init__(name, acnumber, balance)
+        self.branch =branch
+    
+    def deposit(self, amt):
+        self.balance =self.balance+amt
+        print(f"amt deposited is {amt} ")
+        
+    def withdraw(self, amt):
+        if self.balance -amt >=10000 :
+            self.balance =self.balance-amt
+            print(f"amt withdrawn is {amt} ")
+        else : 
+            print("insufficient balance and  min balance maintain 10000 rs. ")
+            
+    
+s=sbi("krishiv","1234567890",25000,"Ranip")
+s.deposit(5000)
+s.withdraw(12000)
+s.check_balance()
+"""
+
+# class method  and static method :
+
+# class method :
+"""
+it works  with class not with individual object.
+use to @classmethod decorator  . 
+first argument  ==> cls  ==> class object
+can access and modify class varibales. 
+""" 
+
+"""class student : 
+    school_name = "Jamna bai international school"
+    
+    def __init__(self,name):
+        self.name =name 
+        
+    @classmethod
+    def change_school(cls,new_school):
+        cls.school_name =new_school
+        
+    def show(self):
+        print("name  : ",self.name)
+        print("school  : ",self.school_name)
+        
+s1=student("krishiv")
+s1.show()
+
+student.change_school("Tulip international school")
+s1.show()
+"""
+
+# static  method : 
+
+"""
+work  like  function . 
+no self no cls 
+can't access class or instance  varibales directly.
+"""
+
+class mathopearation :
+    
+    @staticmethod 
+    def add(a,b):
+        return a+b
+
+m=mathopearation()
+print(m.add(10,20))
+        
