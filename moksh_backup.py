@@ -75,10 +75,61 @@ print(add())
 """
 # with arg  with return  :
 
-def add(a,b):
+"""def add(a,b):
      c=a+b 
      return c 
 a=int(input("enter a : "))
 b=int(input("enter b : "))
 print(add(a,b))
-     
+"""
+
+# *arg : only take numreic value .
+
+"""def add(*args):
+     return sum(args)
+print(add(1,2,3,5,6,7,3,4,555,6,7,12.67))
+"""
+"""def add(*x):
+     sum =0 
+     for i in x : 
+          sum =sum +i 
+     print(sum)
+add(1,2,3,5,6,7,3,4,555,6,7,12.67)
+"""
+
+# **kwargs : take key value pair as args.
+
+"""def d1(**kwargs):
+     for  i , j in kwargs.items():
+          print(i,j)
+          
+d1(name="moksh" , age=20 , gender="male")
+
+"""
+
+#local variable :
+
+"""def x ():
+     a=100   # a local variable ==> within function accessible
+     print(a)
+x()
+# print(a)  # not accessible outside the function  bcz of local variable.
+"""
+
+#global variable :
+
+"""a=100 
+def x():
+     print(a)
+x()
+print(a)
+"""
+# modify the  global variable using global keyword. 
+
+a=120 
+def x():
+     global a 
+     a=890 
+     print(a)
+x()
+print(a)
