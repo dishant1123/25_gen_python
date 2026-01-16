@@ -29,9 +29,56 @@ print(l2[0] [ :])
 """
 
 # task  :1 
-l2 =[[1,2],[0,-4],[5,6]]
+# l2 =[[1,2],[0,-4],[5,6]]
 
 # output : [0,-4],[1,2],[5,6]
 
+# function  type  :
+"""
+1. no arg  no return
+2. no arg  with return
+3. with arg  no return
+4. with arg  with return
+"""
+#1 : 
+"""
+def add():   # add name of function
+     a=10 
+     b=90    # function intialization
+     c=a+b
+     print(c)
+add()
+"""     
 
+# 3 : with arg  no return
 
+"""def add(a,b):
+     c=a+b 
+     print(c)
+     
+a=int(input("enter a : "))
+b=int(input("enter b : "))
+add(a,b)
+c=int(input("enter c : "))
+d=int(input("enter d : "))
+add(c,d)
+"""
+
+# no arg  with return  : 
+"""
+def add():
+     a=int(input("enter a : "))
+     b=int(input("enter b : "))
+     c=a+b 
+     return c 
+print(add())
+"""
+# with arg  with return  :
+
+def add(a,b):
+     c=a+b 
+     return c 
+a=int(input("enter a : "))
+b=int(input("enter b : "))
+print(add(a,b))
+     
