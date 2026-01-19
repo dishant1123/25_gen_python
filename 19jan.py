@@ -63,4 +63,12 @@ Orginal list:
 [19, 65, 57, 39, 152, 639, 121, 44, 90, 190]
 Numbers of the above list divisible by nineteen or thirteen:
 [19, 65, 57, 39, 152, 190]
+
+7. 
+Write a Python program to find palindromes in a given list of strings using Lambda.
+
+Orginal list of strings:
+['php', 'w3r', 'Python', 'abcd', 'Java', 'aaa']
+List of palindromes:
+['php', 'aaa']
 """
