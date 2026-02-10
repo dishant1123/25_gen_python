@@ -48,4 +48,13 @@ b.show_balance()
 
 """
 task  :1  generate  pin when user deposit  and withdraw money  then  enter  pin  and also verify the pin if  user enter  wrong  pin then user can't  withdraw or  deposit  money. 
+
+task  :2  create  user name  and  password  
+
+task  :3 convert code  in to the  menu driven   
+         1. login    ==> user password   ==< verify  
+         2. deposit  ==> enter the  pin   ==> verify  
+         3. withdraw ==> 
+         4. check balance 
+         5. exit
 """
