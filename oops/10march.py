@@ -37,7 +37,7 @@ b.sound()
 """
 
 # ex :2 
-
+"""
 class bank_account(ABC):
     def __init__(self,name):
         self.name=name
@@ -46,7 +46,7 @@ class bank_account(ABC):
     @abstractmethod
     def deposit(self,amount):
         pass 
-
+       
     @abstractmethod
     def withdraw(self,amount):
         pass 
@@ -80,4 +80,39 @@ a.display()
 print("your initial balance is  : ",a.get_balance())
 a.deposit(25000)
 a.withdraw(13000)
-print("your final balance is  : ",a.get_balance())
+print("your final balance is  : ",a.get_balance()"""
+
+# ex :3 real  life example  : 
+
+class bank(ABC): 
+    def __init__(self,name,balance):
+        self.name =name      
+        self.__balance =balance  # private variable
+        self._bank = "SBI"      # protected variable
+    
+    def show_customer(self):
+        print(f"customer name is {self.name}")
+        print("bank name is ",self._bank)
+        
+    def _show_balance(self): 
+        print(f"balance is {self.__balance}")
+    
+    @abstractmethod 
+    def acconut_type(self):
+        pass 
+
+class savings_account(bank):
+    def __init__(self, name, balance,interest_rate):
+        super().__init__(name, balance)
+        self.interest_rate = interest_rate
+        
+    def acconut_type(self):
+        print("savings account")
+    
+    def show_details(self):
+        self.show_customer()
+        self._show_balance()
+        print(f"interest rate is {self.interest_rate}")
+        
+s=savings_account("pinal",100000,5)
+s.show_details()
