@@ -83,7 +83,7 @@ a.withdraw(13000)
 print("your final balance is  : ",a.get_balance()"""
 
 # ex :3 real  life example  : 
-
+"""
 class bank(ABC): 
     def __init__(self,name,balance):
         self.name =name      
@@ -116,3 +116,41 @@ class savings_account(bank):
         
 s=savings_account("pinal",100000,5)
 s.show_details()
+"""
+
+# class method  : cls  ==>   
+
+# static  method  : 
+
+class student : 
+    school ="Ahmedabad international school"
+    
+    def __init__(self,name,marks):
+        self.name =name
+        self.marks =marks
+        
+    @classmethod
+    def change_school(cls,new_name):
+        cls.school =new_name
+        
+    @staticmethod
+    def is_pass(marks):
+        if marks >=40:
+            return "pass" 
+        else :
+            return "fail"
+        
+s =student("pinal",90)
+s1=student("adil",30)
+
+# using static method : 
+print(s.name,student.is_pass(s.marks))
+print(s1.name,student.is_pass(s1.marks))
+    
+student.change_school("Tulip international school")
+print(s.school)
+print(s1.school)
+
+# next class : magic / special method  ex : __str__ , __add__ ,__len__ 
+        
+
