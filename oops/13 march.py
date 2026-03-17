@@ -3,8 +3,8 @@ special method  : __str__ , __add__ ,__len__
 
 """
 # ex :1  __str__ ==> used to how define an  object should be printed
-"""
-class student : 
+
+"""class student : 
         def __init__(self,name,marks):
             self.name =name 
             self.marks =marks
@@ -12,8 +12,8 @@ class student :
             return f"name:{self.name} marks:{self.marks}"
         
 s=student("pinal",90)
-print(s)
-"""
+print(s)"""
+
                 
 # ex :2 __add__  ==> used to add two objects
 
@@ -67,8 +67,8 @@ b2 =book(200)
 b3 =    b1+b2
 print(b1)
 print(b3)
-print(len(b1))
-"""
+print(len(b1))"""
+
 
 # file handling :
 """
@@ -110,9 +110,11 @@ with  open("moksh.txt","w")  as f :
 """
 
 # append mode :
-
+"""
 with open("moksh.txt","a") as f :
     f.write("clg name is  indus. \n")
     f.write("best friend name is  vyom.\n")
     f.close()
-    
+"""
+
+
