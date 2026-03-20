@@ -57,7 +57,7 @@ output  :
     consonant.txt : my nm s ht thkkr.
 """
 
-s=input("enter the string  : ")  # my name is het thakkar.
+"""s=input("enter the string  : ")  # my name is het thakkar.
 
 for i in s : 
     if i in "aeiouAEIOU" :
@@ -68,3 +68,26 @@ for i in s :
         with  open("consonant.txt","a+") as f :
             f.write(i)
             f.close()
+"""
+
+# task  :2 
+"""
+Write a Python program to reverse the content of a one file and store it in second file and also convert content of second 
+file into uppercase and store it in third file and also count number of Vowels in third file and also print only 2nd line from 
+the content of third file.
+Examples:
+If data file one contains the following data:
+Friends are crazy, Friends are naughty !
+Friends are honest, Friends are  best !
+Output 1:
+! tseb  era sdneirF ,tsenoh era sdneirF
+! ythguan era sdneirF ,yzarc era sdneirF
+Output 2:
+! TSEB  ERA SDNEIRF ,TSENOH ERA SDNEIRF
+! YTHGUAN ERA SDNEIRF ,YZARC ERA SDNEIRF
+Output 3:
+Vowels = 22
+Output 4:
+! YTHGUAN ERA SDNEIRF ,YZARC ERA SDNEIRF
+"""
+
