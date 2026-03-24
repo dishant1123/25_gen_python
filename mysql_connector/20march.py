@@ -27,7 +27,7 @@ conn =mydb.cursor()
              """)
 '''
 # print("TABLE created successfully")
-
+"""
 conn.execute("INSERT INTO student (name, salary) VALUES ('moksh', 100000)")
 conn.execute("INSERT INTO student (name, salary) VALUES ('pinal', 200000)")
 conn.execute("INSERT INTO student (name, salary) VALUES ('dhruv', 90000)")
@@ -35,7 +35,14 @@ conn.execute("INSERT INTO student (name, salary) VALUES ('keshav', 80000)")
 conn.execute("INSERT INTO student (name, salary) VALUES ('het', 10000)")
 
 mydb.commit()
-print("Data inserted successfully")
+print("Data inserted successfully")"""
+
+conn.execute("select *  from student")
+rows = conn.fetchall()
+
+for i in rows : 
+    print(i)
+
 conn.close()
 mydb.close()
 
