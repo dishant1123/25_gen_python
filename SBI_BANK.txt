@@ -1,0 +1,6 @@
+=========BANK TRANSACTIONS DETAILS=========
+account name : pinal 
+ account number : 789000124523 
+ balance : 32000
+deposited 20000 to account 789000124523
+withdrawn 38000 from account 789000124523

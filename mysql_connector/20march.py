@@ -48,3 +48,10 @@ mydb.close()
 
 # update  : moksh  het  salary 
 # delete  : keshav 
+
+"""
+database ==> 25_gwd_comp   ==> create database  25_gwd_comp 
+     table   ==> student    ==> create  table  emp 
+         id int  , name varchar  , salary int
+     
+"""
