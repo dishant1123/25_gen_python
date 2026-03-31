@@ -88,7 +88,7 @@ except negative_number as n :
 
 # ex :7 bank system (oop + file + exception)
 
-class bankaccount: 
+"""class bankaccount: 
     def __init__(self,name,accno,balance):
         self.name=name
         self.accno=accno
@@ -147,7 +147,7 @@ except FileExistsError :
     
 finally : 
     print("closing file....")
-    
+"""    
 """
 task :1 
                         HDFC BANK 
@@ -162,3 +162,4 @@ SRNO          TRANSACTION_DATE        AMOUNT    DR       CR         BALANCE
 
 """
 # next  : numpy 
+
