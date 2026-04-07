@@ -2,7 +2,8 @@ import numpy as np
 
 # arange  function  : 
 
-"""a=np.arange(10)
+
+"""a=np.arange(10)  # [1,2,3,4,5,6,7,8,9]
 print(a)
 
 b= np.arange(1,10,2)  # start ,stop ,step
@@ -17,13 +18,14 @@ print(a)
 """
 
 # reshape  of  matrix : 
+
 """
-a=np.arange(1,19).reshape(3,3,2)  # 3d  3 row 2 col 
+    # a=np.arange(1,19).reshape(3,3,2)  # 3d  3 row 2 col 
 a=np.arange(1,19).reshape(9,2)  # 3d  3 row 2 col 
 # print(a)
 
 x=np.arange(1,33,dtype=float)
-print(x)
+# print(x)
 
 print(x.reshape(2,2,2,4))  # 2 mat * 2 mat *2 row *4 col 
 
@@ -50,8 +52,8 @@ print(x1)
 
 # flatten : 
 
-"""
-x=np.arange(1,10).reshape(3,3)
+
+"""x=np.arange(1,10).reshape(3,3)
 # print(x)
 x1=x.flatten() #it create a new memory . 
 # print(x1)
@@ -59,8 +61,8 @@ x1=x.flatten() #it create a new memory .
 x[0,0] =55
 print(x)
 print(x1)
-"""
 
+"""
 # transpose  function  :
 
 """a=np.arange(1,5).reshape(2,2)
@@ -100,6 +102,7 @@ axis =1   row wise
 
 x=np.array([[4,8,1],[9,5,3],[11,5,7]])
 print(x)
+# print(x.sum(axis=0))
 # print(x.min())
 # print(x.max())
 # print(x.mean())
@@ -109,7 +112,8 @@ print(x)
 # print(x.argmin(axis=0)) # [0,1,0]
 # print(x.argmin(axis=1)) # [2,2,1 ]
 # print(x.argmax(axis=0)) 
-# print(x.argmax(axis=1)) 
+print(x.argmax(axis=1)) 
 
-print(x.std())
+# print(x.std())
+
 
